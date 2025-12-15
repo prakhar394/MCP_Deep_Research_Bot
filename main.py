@@ -12,9 +12,9 @@ async def main():
 
     assistant = MCPResearchAssistant(openai_key, tavily_key)
 
-    query = "What are recent advances in transformer efficiency?"
-    # query1 = "Best techniques for LLM optimization?"
-    result = await assistant.answer_query(query1, max_papers=8)
+    query = "what is the best conversational AI assistant"
+    #query1 = "Best techniques for LLM optimization?"
+    result = await assistant.answer_query(query, max_papers=8)
 
     print(result["answer"])
 
